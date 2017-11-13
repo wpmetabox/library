@@ -5,20 +5,20 @@
 add_filter( 'rwmb_meta_boxes', 'your_prefix_select_demo' );
 function your_prefix_select_demo( $meta_boxes ) {
 	$meta_boxes[] = array(
-		'title' => __( 'Select Field Demo', 'your-prefix' ),
+		'title' => __( 'Select Field Demo', 'textdomain' ),
 
 		'fields' => array(
 			array(
-				'name'    => __( 'Select', 'your-prefix' ),
+				'name'    => __( 'Select', 'textdomain' ),
 				'id'      => 'select_simple',
 				'type'    => 'select',
 				'options' => array(
-					'value1' => __( 'Label1', 'your-prefix' ),
-					'value2' => __( 'Label2', 'your-prefix' ),
+					'value1' => __( 'Label1', 'textdomain' ),
+					'value2' => __( 'Label2', 'textdomain' ),
 				),
 			),
 			array(
-				'name' => __( 'Select', 'your-prefix' ),
+				'name' => __( 'Select', 'textdomain' ),
 				'id'   => 'select',
 				'type' => 'select',
 
@@ -26,8 +26,8 @@ function your_prefix_select_demo( $meta_boxes ) {
 
 				// Array of 'value' => 'Label' pairs for select box
 				'options'     => array(
-					'value1' => __( 'Label1', 'your-prefix' ),
-					'value2' => __( 'Label2', 'your-prefix' ),
+					'value1' => __( 'Label1', 'textdomain' ),
+					'value2' => __( 'Label2', 'textdomain' ),
 				),
 
 				// Select multiple values, optional. Default is false.
@@ -37,24 +37,24 @@ function your_prefix_select_demo( $meta_boxes ) {
 				'std'         => 'value2',
 
 				// Placeholder
-				'placeholder' => __( 'Select an Item', 'your-prefix' ),
+				'placeholder' => __( 'Select an Item', 'textdomain' ),
 			),
 			array(
-				'name'     => __( 'Select Advanced', 'your-prefix' ),
+				'name'     => __( 'Select Advanced', 'textdomain' ),
 				'id'       => 'select_advanced',
 				'type'     => 'select_advanced',
 
 				// Array of 'value' => 'Label' pairs for select box
 				'options'  => array(
-					'value1' => __( 'Label1', 'your-prefix' ),
-					'value2' => __( 'Label2', 'your-prefix' ),
+					'value1' => __( 'Label1', 'textdomain' ),
+					'value2' => __( 'Label2', 'textdomain' ),
 				),
 
 				// Select multiple values, optional. Default is false.
 				'multiple' => false,
 
 				'std'         => 'value2', // Default value, optional
-				'placeholder' => __( 'Select an Item', 'your-prefix' ),
+				'placeholder' => __( 'Select an Item', 'textdomain' ),
 			),
 
 		),

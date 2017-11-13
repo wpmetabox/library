@@ -26,11 +26,11 @@ function YOURPREFIX_register_meta_boxes( $meta_boxes ) {
 	$prefix       = 'rw_';
 	$meta_boxes[] = array(
 		'id'         => 'any_id',
-		'title'      => __( 'Meta Box Title', 'your-prefix' ),
+		'title'      => __( 'Meta Box Title', 'textdomain' ),
 		'post_types' => 'page',
 		'fields'     => array(
 			array(
-				'name' => __( 'Your images', 'your-prefix' ),
+				'name' => __( 'Your images', 'textdomain' ),
 				'id'   => "{$prefix}img",
 				'type' => 'plupload_image',
 			),

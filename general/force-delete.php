@@ -4,31 +4,31 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 	$prefix = '';
 
 	$meta_boxes = array(
-		'title'  => __( 'Test Meta Box', 'your-prefix' ),
+		'title'  => __( 'Test Meta Box', 'textdomain' ),
 		'fields' => array(
 			// FILE UPLOAD
 			array(
-				'name' => __( 'File Upload', 'your-prefix' ),
+				'name' => __( 'File Upload', 'textdomain' ),
 				'id'   => "{$prefix}file",
 				'type' => 'file',
 				'force_delete' => true,
 			),
 			// IMAGE UPLOAD
 			array(
-				'name' => __( 'Image Upload', 'your-prefix' ),
+				'name' => __( 'Image Upload', 'textdomain' ),
 				'id'   => "{$prefix}image",
 				'type' => 'image',
 			),
 			// THICKBOX IMAGE UPLOAD (WP 3.3+)
 			array(
-				'name' => __( 'Thickbox Image Upload', 'your-prefix' ),
+				'name' => __( 'Thickbox Image Upload', 'textdomain' ),
 				'id'   => "{$prefix}thickbox",
 				'type' => 'thickbox_image',
 				'force_delete' => true,
 			),
 			// PLUPLOAD IMAGE UPLOAD (WP 3.3+)
 			array(
-				'name'             => __( 'Plupload Image Upload', 'your-prefix' ),
+				'name'             => __( 'Plupload Image Upload', 'textdomain' ),
 				'id'               => "{$prefix}plupload",
 				'type'             => 'plupload_image',
 				'max_file_uploads' => 4,

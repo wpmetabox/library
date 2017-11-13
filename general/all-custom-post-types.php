@@ -10,12 +10,12 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 	// 1st meta box
 	$meta_boxes[] = array(
 		'id'     => 'personal',
-		'title'  => __( 'Personal Information', 'your-prefix' ),
+		'title'  => __( 'Personal Information', 'textdomain' ),
 		'post_types' => $post_types,
 
 		'fields' => array(
 			array(
-				'name' => __( 'Full name', 'your-prefix' ),
+				'name' => __( 'Full name', 'textdomain' ),
 				'id'   => $prefix . 'fname',
 				'type' => 'text',
 			),

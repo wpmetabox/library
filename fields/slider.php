@@ -5,16 +5,16 @@
 add_filter( 'rwmb_meta_boxes', 'your_prefix_slider_demo' );
 function your_prefix_slider_demo( $meta_boxes ) {
 	$meta_boxes[] = array(
-		'title' => __( 'Slider Demo', 'your-prefix' ),
+		'title' => __( 'Slider Demo', 'textdomain' ),
 		'fields' => array(
 			array(
-				'name' => __( 'Slider', 'your-prefix' ),
+				'name' => __( 'Slider', 'textdomain' ),
 				'id'   => 'slider',
 				'type' => 'slider',
 
 				// Text labels displayed before and after value
-				'prefix' => __( '$', 'your-prefix' ),
-				'suffix' => __( ' USD', 'your-prefix' ),
+				'prefix' => __( '$', 'textdomain' ),
+				'suffix' => __( ' USD', 'textdomain' ),
 
 				// jQuery UI slider options. See here http://api.jqueryui.com/slider/
 				'js_options' => array(

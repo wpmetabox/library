@@ -5,10 +5,10 @@
 add_filter( 'rwmb_meta_boxes', 'your_prefix_taxonomy_demo' );
 function your_prefix_taxonomy_demo( $meta_boxes ) {
 	$meta_boxes[] = array(
-		'title' => __( 'Taxonomy Demo', 'your-prefix' ),
+		'title' => __( 'Taxonomy Demo', 'textdomain' ),
 		'fields' => array(
 			array(
-				'name'    => __( 'Taxonomy', 'your-prefix' ),
+				'name'    => __( 'Taxonomy', 'textdomain' ),
 				'id'      => 'prefix_taxonomy',
 				'type'    => 'taxonomy',
 

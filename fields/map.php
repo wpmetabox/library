@@ -5,18 +5,18 @@
 add_filter( 'rwmb_meta_boxes', 'your_prefix_map_demo' );
 function your_prefix_map_demo( $meta_boxes ) {
 	$meta_boxes[] = array(
-		'title'  => __( 'Google Map', 'your-prefix' ),
+		'title'  => __( 'Google Map', 'textdomain' ),
 		'fields' => array(
 			// Map requires at least one address field (with type = text)
 			array(
 				'id'   => 'address',
-				'name' => __( 'Address', 'your-prefix' ),
+				'name' => __( 'Address', 'textdomain' ),
 				'type' => 'text',
-				'std'  => __( 'Hanoi, Vietnam', 'your-prefix' ),
+				'std'  => __( 'Hanoi, Vietnam', 'textdomain' ),
 			),
 			array(
 				'id'            => 'map',
-				'name'          => __( 'Location', 'your-prefix' ),
+				'name'          => __( 'Location', 'textdomain' ),
 				'type'          => 'map',
 
 				// Default location: 'latitude,longitude[,zoom]' (zoom is optional)
@@ -24,7 +24,7 @@ function your_prefix_map_demo( $meta_boxes ) {
 
 				// Name of text field where address is entered. Can be list of text fields, separated by commas (for ex. city, state)
 				'address_field' => 'address',
-				'api_key'       => 'XXXXXXXXX', // https://metabox.io/docs/define-fields/#section-map
+				// 'api_key'       => 'XXXXXXXXX', // https://metabox.io/docs/define-fields/#section-map
 			),
 		),
 	);

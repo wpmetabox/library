@@ -22,10 +22,10 @@ add_filter( 'rwmb_meta_boxes', 'YOURPREFIX_register_meta_boxes' );
 function YOURPREFIX_register_meta_boxes( $meta_boxes ) {
 	$prefix       = 'rw_';
 	$meta_boxes[] = array(
-		'title'   => __( 'Meta Box Title', 'your-prefix' ),
+		'title'   => __( 'Meta Box Title', 'textdomain' ),
 		'fields'  => array(
 			array(
-				'name' => __( 'Your images', 'your-prefix' ),
+				'name' => __( 'Your images', 'textdomain' ),
 				'id'   => "{$prefix}img",
 				'type' => 'plupload_image',
 			),

@@ -39,7 +39,7 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 		'id'         => 'standard',
 
 		// Meta box title - Will appear at the drag and drop handle bar. Required.
-		'title'      => esc_html__( 'Standard Fields', 'your-prefix' ),
+		'title'      => esc_html__( 'Standard Fields', 'textdomain' ),
 
 		// Post types, accept custom post types as well - DEFAULT is 'post'. Can be array (multiple post types) or string (1 post type). Optional.
 		'post_types' => array( 'post', 'page' ),
@@ -58,22 +58,22 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 			// TEXT
 			array(
 				// Field name - Will be used as label
-				'name'  => esc_html__( 'Text', 'your-prefix' ),
+				'name'  => esc_html__( 'Text', 'textdomain' ),
 				// Label description, display below field name (optional).
-				'label_description' => esc_html__( 'Some description', 'your-prefix' ),
+				'label_description' => esc_html__( 'Some description', 'textdomain' ),
 				// Field ID, i.e. the meta key
 				'id'    => "{$prefix}text",
 				// Field description (optional)
-				'desc'  => esc_html__( 'Text description', 'your-prefix' ),
+				'desc'  => esc_html__( 'Text description', 'textdomain' ),
 				'type'  => 'text',
 				// Default value (optional)
-				'std'   => esc_html__( 'Default text value', 'your-prefix' ),
+				'std'   => esc_html__( 'Default text value', 'textdomain' ),
 				// CLONES: Add to make the field cloneable (i.e. have multiple value)
 				'clone' => true,
 			),
 			// CHECKBOX
 			array(
-				'name' => esc_html__( 'Checkbox', 'your-prefix' ),
+				'name' => esc_html__( 'Checkbox', 'textdomain' ),
 				'id'   => "{$prefix}checkbox",
 				'type' => 'checkbox',
 				// Value can be 0 or 1
@@ -81,48 +81,54 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 			),
 			// RADIO BUTTONS
 			array(
-				'name'    => esc_html__( 'Radio', 'your-prefix' ),
+				'name'    => esc_html__( 'Radio', 'textdomain' ),
 				'id'      => "{$prefix}radio",
 				'type'    => 'radio',
 				// Array of 'value' => 'Label' pairs for radio options.
 				// Note: the 'value' is stored in meta field, not the 'Label'
 				'options' => array(
-					'value1' => esc_html__( 'Label1', 'your-prefix' ),
-					'value2' => esc_html__( 'Label2', 'your-prefix' ),
+					'value1' => esc_html__( 'Label1', 'textdomain' ),
+					'value2' => esc_html__( 'Label2', 'textdomain' ),
 				),
 			),
 			// SELECT BOX
 			array(
-				'name'        => esc_html__( 'Select', 'your-prefix' ),
+				'name'        => esc_html__( 'Select', 'textdomain' ),
 				'id'          => "{$prefix}select",
 				'type'        => 'select',
 				// Array of 'value' => 'Label' pairs for select box
 				'options'     => array(
-					'value1' => esc_html__( 'Label1', 'your-prefix' ),
-					'value2' => esc_html__( 'Label2', 'your-prefix' ),
+					'java'       => esc_html__( 'Java', 'textdomain' ),
+					'javascript' => esc_html__( 'JavaScript', 'textdomain' ),
+					'php'        => esc_html__( 'PHP', 'textdomain' ),
+					'csharp'     => esc_html__( 'C#', 'textdomain' ),
+					'objectivec' => esc_html__( 'Objective-C', 'textdomain' ),
+					'kotlin'     => esc_html__( 'Kotlin', 'textdomain' ),
+					'swift'      => esc_html__( 'Swift', 'textdomain' ),
 				),
 				// Select multiple values, optional. Default is false.
-				'multiple'    => false,
+				'multiple'    => true,
 				'std'         => 'value2',
-				'placeholder' => esc_html__( 'Select an Item', 'your-prefix' ),
+				'placeholder' => esc_html__( 'Select an Item', 'textdomain' ),
+				'select_all_none' => true,
 			),
 			// HIDDEN
 			array(
 				'id'   => "{$prefix}hidden",
 				'type' => 'hidden',
 				// Hidden field must have predefined value
-				'std'  => esc_html__( 'Hidden value', 'your-prefix' ),
+				'std'  => esc_html__( 'Hidden value', 'textdomain' ),
 			),
 			// PASSWORD
 			array(
-				'name' => esc_html__( 'Password', 'your-prefix' ),
+				'name' => esc_html__( 'Password', 'textdomain' ),
 				'id'   => "{$prefix}password",
 				'type' => 'password',
 			),
 			// TEXTAREA
 			array(
-				'name' => esc_html__( 'Textarea', 'your-prefix' ),
-				'desc' => esc_html__( 'Textarea description', 'your-prefix' ),
+				'name' => esc_html__( 'Textarea', 'textdomain' ),
+				'desc' => esc_html__( 'Textarea description', 'textdomain' ),
 				'id'   => "{$prefix}textarea",
 				'type' => 'textarea',
 				'cols' => 20,
@@ -139,8 +145,8 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 			// optional override of default jquery.validate messages
 			'messages' => array(
 				"{$prefix}password" => array(
-					'required'  => esc_html__( 'Password is required', 'your-prefix' ),
-					'minlength' => esc_html__( 'Password must be at least 7 characters', 'your-prefix' ),
+					'required'  => esc_html__( 'Password is required', 'textdomain' ),
+					'minlength' => esc_html__( 'Password must be at least 7 characters', 'textdomain' ),
 				),
 			),
 		),
@@ -148,24 +154,24 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 
 	// 2nd meta box
 	$meta_boxes[] = array(
-		'title' => esc_html__( 'Advanced Fields', 'your-prefix' ),
+		'title' => esc_html__( 'Advanced Fields', 'textdomain' ),
 
 		'fields' => array(
 			// HEADING
 			array(
 				'type' => 'heading',
-				'name' => esc_html__( 'Heading', 'your-prefix' ),
-				'desc' => esc_html__( 'Optional description for this heading', 'your-prefix' ),
+				'name' => esc_html__( 'Heading', 'textdomain' ),
+				'desc' => esc_html__( 'Optional description for this heading', 'textdomain' ),
 			),
 			// SLIDER
 			array(
-				'name'       => esc_html__( 'Slider', 'your-prefix' ),
+				'name'       => esc_html__( 'Slider', 'textdomain' ),
 				'id'         => "{$prefix}slider",
 				'type'       => 'slider',
 
 				// Text labels displayed before and after value
-				'prefix'     => esc_html__( '$', 'your-prefix' ),
-				'suffix'     => esc_html__( ' USD', 'your-prefix' ),
+				'prefix'     => esc_html__( '$', 'textdomain' ),
+				'suffix'     => esc_html__( ' USD', 'textdomain' ),
 
 				// jQuery UI slider options. See here http://api.jqueryui.com/slider/
 				'js_options' => array(
@@ -179,7 +185,7 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 			),
 			// NUMBER
 			array(
-				'name' => esc_html__( 'Number', 'your-prefix' ),
+				'name' => esc_html__( 'Number', 'textdomain' ),
 				'id'   => "{$prefix}number",
 				'type' => 'number',
 
@@ -188,22 +194,25 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 			),
 			// DATE
 			array(
-				'name'       => esc_html__( 'Date picker', 'your-prefix' ),
+				'name'       => esc_html__( 'Date picker', 'textdomain' ),
 				'id'         => "{$prefix}date",
 				'type'       => 'date',
 
-				// jQuery date picker options. See here http://api.jqueryui.com/datepicker
+				// Date picker options. See here http://api.jqueryui.com/datepicker
 				'js_options' => array(
-					'appendText'      => esc_html__( '(yyyy-mm-dd)', 'your-prefix' ),
-					'dateFormat'      => esc_html__( 'yy-mm-dd', 'your-prefix' ),
-					'changeMonth'     => true,
-					'changeYear'      => true,
-					'showButtonPanel' => true,
+					'dateFormat'      => 'yy-mm-dd',
+					'showButtonPanel' => false,
 				),
+
+				// Display inline?
+				'inline' => false,
+
+				// Save value as timestamp?
+				'timestamp' => false,
 			),
 			// DATETIME
 			array(
-				'name'       => esc_html__( 'Datetime picker', 'your-prefix' ),
+				'name'       => esc_html__( 'Datetime picker', 'textdomain' ),
 				'id'         => $prefix . 'datetime',
 				'type'       => 'datetime',
 
@@ -213,11 +222,14 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 				'js_options' => array(
 					'stepMinute'     => 15,
 					'showTimepicker' => true,
+					'controlType' => 'select',
+					'showButtonPanel' => false,
+					'oneLine' => true,
 				),
 			),
 			// TIME
 			array(
-				'name'       => esc_html__( 'Time picker', 'your-prefix' ),
+				'name'       => esc_html__( 'Time picker', 'textdomain' ),
 				'id'         => $prefix . 'time',
 				'type'       => 'time',
 
@@ -226,106 +238,122 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 				// For time options, see here http://trentrichardson.com/examples/timepicker/
 				'js_options' => array(
 					'stepMinute' => 5,
-					'showSecond' => true,
-					'stepSecond' => 10,
+					// 'showSecond' => true,
+					// 'stepSecond' => 10,
+					'controlType' => 'select',
 				),
+
+				'inline' => true,
 			),
 			// COLOR
 			array(
-				'name' => esc_html__( 'Color picker', 'your-prefix' ),
-				'id'   => "{$prefix}color",
-				'type' => 'color',
+				'name'          => esc_html__( 'Color picker', 'textdomain' ),
+				'id'            => 'field_id',
+				'type'          => 'color',
+				// Add alpha channel?
+				'alpha_channel' => true,
+				// Color picker options. See here: https://automattic.github.io/Iris/.
+				'js_options'    => array(
+					'palettes' => array( '#125', '#459', '#78b', '#ab0', '#de3', '#f0f' )
+				),
 			),
 			// CHECKBOX LIST
 			array(
-				'name'    => esc_html__( 'Checkbox list', 'your-prefix' ),
+				'name'    => esc_html__( 'Checkbox list', 'textdomain' ),
 				'id'      => "{$prefix}checkbox_list",
 				'type'    => 'checkbox_list',
 				// Options of checkboxes, in format 'value' => 'Label'
 				'options' => array(
-					'value1' => esc_html__( 'Label1', 'your-prefix' ),
-					'value2' => esc_html__( 'Label2', 'your-prefix' ),
+					'java'       => esc_html__( 'Java', 'textdomain' ),
+					'javascript' => esc_html__( 'JavaScript', 'textdomain' ),
+					'php'        => esc_html__( 'PHP', 'textdomain' ),
+					'csharp'     => esc_html__( 'C#', 'textdomain' ),
+					'objectivec' => esc_html__( 'Objective-C', 'textdomain' ),
+					'kotlin'     => esc_html__( 'Kotlin', 'textdomain' ),
+					'swift'      => esc_html__( 'Swift', 'textdomain' ),
 				),
+				// Display options in a single row?
+				// 'inline' => true,
+				// Display "Select All / None" button?
+				'select_all_none' => true,
 			),
 			// AUTOCOMPLETE
 			array(
-				'name'    => esc_html__( 'Autocomplete', 'your-prefix' ),
+				'name'    => esc_html__( 'Autocomplete', 'textdomain' ),
 				'id'      => "{$prefix}autocomplete",
 				'type'    => 'autocomplete',
 				// Options of autocomplete, in format 'value' => 'Label'
 				'options' => array(
-					'value1' => esc_html__( 'Label1', 'your-prefix' ),
-					'value2' => esc_html__( 'Label2', 'your-prefix' ),
+					'java'       => esc_html__( 'Java', 'textdomain' ),
+					'javascript' => esc_html__( 'JavaScript', 'textdomain' ),
+					'php'        => esc_html__( 'PHP', 'textdomain' ),
+					'c'          => esc_html__( 'C', 'textdomain' ),
+					'cplusplus'  => esc_html__( 'C++', 'textdomain' ),
+					'csharp'     => esc_html__( 'C#', 'textdomain' ),
+					'objectivec' => esc_html__( 'Objective-C', 'textdomain' ),
+					'kotlin'     => esc_html__( 'Kotlin', 'textdomain' ),
+					'swift'      => esc_html__( 'Swift', 'textdomain' ),
 				),
 				// Input size
 				'size'    => 30,
 				// Clone?
-				'clone'   => false,
-			),
-			// EMAIL
-			array(
-				'name' => esc_html__( 'Email', 'your-prefix' ),
-				'id'   => "{$prefix}email",
-				'desc' => esc_html__( 'Email description', 'your-prefix' ),
-				'type' => 'email',
-				'std'  => 'name@email.com',
+				// 'clone'   => true,
 			),
 			// RANGE
 			array(
-				'name' => esc_html__( 'Range', 'your-prefix' ),
+				'name' => esc_html__( 'Range', 'textdomain' ),
 				'id'   => "{$prefix}range",
-				'desc' => esc_html__( 'Range description', 'your-prefix' ),
+				'desc' => esc_html__( 'Range description', 'textdomain' ),
 				'type' => 'range',
 				'min'  => 0,
 				'max'  => 100,
 				'step' => 5,
 				'std'  => 0,
 			),
-			// URL
-			array(
-				'name' => esc_html__( 'URL', 'your-prefix' ),
-				'id'   => "{$prefix}url",
-				'desc' => esc_html__( 'URL description', 'your-prefix' ),
-				'type' => 'url',
-				'std'  => 'http://google.com',
-			),
 			// OEMBED
 			array(
-				'name' => esc_html__( 'oEmbed', 'your-prefix' ),
+				'name' => esc_html__( 'oEmbed', 'textdomain' ),
 				'id'   => "{$prefix}oembed",
-				'desc' => esc_html__( 'oEmbed description', 'your-prefix' ),
+				'desc' => esc_html__( 'oEmbed description', 'textdomain' ),
 				'type' => 'oembed',
 			),
 			// SELECT ADVANCED BOX
 			array(
-				'name'        => esc_html__( 'Select', 'your-prefix' ),
+				'name'        => esc_html__( 'Select', 'textdomain' ),
 				'id'          => "{$prefix}select_advanced",
 				'type'        => 'select_advanced',
 				// Array of 'value' => 'Label' pairs for select box
 				'options'     => array(
-					'value1' => esc_html__( 'Label1', 'your-prefix' ),
-					'value2' => esc_html__( 'Label2', 'your-prefix' ),
+					'java'       => esc_html__( 'Java', 'textdomain' ),
+					'javascript' => esc_html__( 'JavaScript', 'textdomain' ),
+					'php'        => esc_html__( 'PHP', 'textdomain' ),
+					'csharp'     => esc_html__( 'C#', 'textdomain' ),
+					'objectivec' => esc_html__( 'Objective-C', 'textdomain' ),
+					'kotlin'     => esc_html__( 'Kotlin', 'textdomain' ),
+					'swift'      => esc_html__( 'Swift', 'textdomain' ),
 				),
 				// Select multiple values, optional. Default is false.
-				'multiple'    => false,
+				'multiple'    => true,
 				// 'std'         => 'value2', // Default value, optional
-				'placeholder' => esc_html__( 'Select an Item', 'your-prefix' ),
+				'placeholder' => esc_html__( 'Select an Item', 'textdomain' ),
+				'select_all_none' => true,
 			),
 			// TAXONOMY
 			array(
-				'name'       => esc_html__( 'Taxonomy', 'your-prefix' ),
+				'name'       => esc_html__( 'Taxonomy', 'textdomain' ),
 				'id'         => "{$prefix}taxonomy",
 				'type'       => 'taxonomy',
 				// Taxonomy name
 				'taxonomy'   => 'category',
 				// How to show taxonomy: 'checkbox_list' (default) or 'checkbox_tree', 'select_tree', select_advanced or 'select'. Optional
-				'field_type' => 'checkbox_list',
+				'field_type' => 'select_tree',
+				// 'inline' => false,
 				// Additional arguments for get_terms() function. Optional
 				'query_args' => array(),
 			),
 			// TAXONOMY ADVANCED
 			array(
-				'name'       => esc_html__( 'Taxonomy Advanced', 'your-prefix' ),
+				'name'       => esc_html__( 'Taxonomy Advanced', 'textdomain' ),
 				'id'         => "{$prefix}taxonomy_advanced",
 				'type'       => 'taxonomy_advanced',
 
@@ -343,14 +371,14 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 			),
 			// POST
 			array(
-				'name'        => esc_html__( 'Posts (Pages)', 'your-prefix' ),
+				'name'        => esc_html__( 'Posts (Pages)', 'textdomain' ),
 				'id'          => "{$prefix}pages",
 				'type'        => 'post',
 				// Post type
 				'post_type'   => 'page',
 				// Field type, either 'select' or 'select_advanced' (default)
 				'field_type'  => 'select_advanced',
-				'placeholder' => esc_html__( 'Select an Item', 'your-prefix' ),
+				'placeholder' => esc_html__( 'Select an Item', 'textdomain' ),
 				// Query arguments (optional). No settings means get all published posts
 				'query_args'  => array(
 					'post_status'    => 'publish',
@@ -359,18 +387,18 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 			),
 			// WYSIWYG/RICH TEXT EDITOR
 			array(
-				'name'    => esc_html__( 'WYSIWYG / Rich Text Editor', 'your-prefix' ),
+				'name'    => esc_html__( 'WYSIWYG / Rich Text Editor', 'textdomain' ),
 				'id'      => "{$prefix}wysiwyg",
 				'type'    => 'wysiwyg',
 				// Set the 'raw' parameter to TRUE to prevent data being passed through wpautop() on save
 				'raw'     => false,
-				'std'     => esc_html__( 'WYSIWYG default value', 'your-prefix' ),
+				'std'     => esc_html__( 'WYSIWYG default value', 'textdomain' ),
 
 				// Editor settings, see wp_editor() function: look4wp.com/wp_editor
 				'options' => array(
 					'textarea_rows' => 4,
 					'teeny'         => true,
-					'media_buttons' => false,
+					// 'media_buttons' => false,
 				),
 			),
 			// DIVIDER
@@ -379,21 +407,32 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 			),
 			// FILE UPLOAD
 			array(
-				'name' => esc_html__( 'File Upload', 'your-prefix' ),
+				'name' => esc_html__( 'File Upload', 'textdomain' ),
 				'id'   => "{$prefix}file",
 				'type' => 'file',
 			),
 			// FILE ADVANCED (WP 3.5+)
 			array(
-				'name'             => esc_html__( 'File Advanced Upload', 'your-prefix' ),
+				'name'             => esc_html__( 'File Advanced Upload', 'textdomain' ),
 				'id'               => "{$prefix}file_advanced",
 				'type'             => 'file_advanced',
-				'max_file_uploads' => 4,
-				'mime_type'        => 'application,audio,video', // Leave blank for all file types
+
+				// Delete file from Media Library when remove it from post meta?
+				// Note: it might affect other posts if you use same file for multiple posts
+				'force_delete'     => false,
+
+				// Maximum file uploads.
+				'max_file_uploads' => 2,
+
+				// File types.
+				// 'mime_type'        => 'application,audio,video',
+
+				// Do not show how many files uploaded/remaining.
+				'max_status'       => 'false',
 			),
 			// IMAGE ADVANCED - RECOMMENDED
 			array(
-				'name'             => esc_html__( 'Image Advanced Upload (Recommended)', 'your-prefix' ),
+				'name'             => esc_html__( 'Image Advanced Upload (Recommended)', 'textdomain' ),
 				'id'               => "{$prefix}imgadv",
 				'type'             => 'image_advanced',
 
@@ -406,11 +445,14 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 
 				// Display the "Uploaded 1/2 files" status
 				'max_status'       => true,
+
+				// Image size that displays in the edit page.
+				'image_size'       => 'thumbnail',
 			),
 			// IMAGE UPLOAD
 			array(
 				'id'               => 'image_upload',
-				'name'             => esc_html__( 'Image Upload', 'your-prefix' ),
+				'name'             => esc_html__( 'Image Upload', 'textdomain' ),
 				'type'             => 'image_upload',
 
 				// Delete image from Media Library when remove it from post meta?
@@ -425,7 +467,7 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 			),
 			// PLUPLOAD IMAGE UPLOAD (ALIAS OF IMAGE UPLOAD)
 			array(
-				'name'             => esc_html__( 'Plupload Image (Alias of Image Upload)', 'your-prefix' ),
+				'name'             => esc_html__( 'Plupload Image (Alias of Image Upload)', 'textdomain' ),
 				'id'               => "{$prefix}plupload",
 				'type'             => 'plupload_image',
 
@@ -441,7 +483,7 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 			),
 			// THICKBOX IMAGE UPLOAD (WP 3.3+)
 			array(
-				'name'         => esc_html__( 'Thickbox Image Upload', 'your-prefix' ),
+				'name'         => esc_html__( 'Thickbox Image Upload', 'textdomain' ),
 				'id'           => "{$prefix}thickbox",
 				'type'         => 'thickbox_image',
 
@@ -451,7 +493,7 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 			),
 			// IMAGE
 			array(
-				'name'             => esc_html__( 'Image Upload', 'your-prefix' ),
+				'name'             => esc_html__( 'Image Upload', 'textdomain' ),
 				'id'               => "{$prefix}image",
 				'type'             => 'image',
 
@@ -460,11 +502,11 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 				'force_delete'     => false,
 
 				// Maximum image uploads
-				'max_file_uploads' => 2,
+				// 'max_file_uploads' => 2,
 			),
 			// VIDEO
 			array(
-				'name'             => __( 'Video', 'your-prefix' ),
+				'name'             => __( 'Video', 'textdomain' ),
 				'id'               => 'video',
 				'type'             => 'video',
 
@@ -480,9 +522,15 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 			),
 			// BUTTON
 			array(
-				'id'   => "{$prefix}button",
-				'type' => 'button',
-				'name' => ' ', // Empty name will "align" the button to all field inputs
+				'type'       => 'button',
+				'name'       => esc_html__( 'Advanced Settings', 'textdomain' ),
+				// Button text.
+				'std'        => esc_html__( 'Toggle', 'textdomain' ),
+				// Custom HTML attributes.
+				'attributes' => array(
+					'data-section' => 'advanced-section',
+					'class'        => 'js-toggle',
+				),
 			),
 			// TEXT-LIST
 			array(
@@ -500,5 +548,31 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 		),
 	);
 
+	return $meta_boxes;
+}
+
+add_filter( 'rwmb_meta_boxes', 'your_prefix_fieldset_text_demo' );
+function your_prefix_fieldset_text_demo( $meta_boxes ) {
+	$meta_boxes[] = array(
+		'title'  => __( 'Fieldset Text Demo', 'textdomain' ),
+		'fields' => array(
+			array(
+				'id'      => 'fieldset_text',
+				'name'    => __( 'Fieldset Text', 'textdomain' ),
+				'type'    => 'fieldset_text',
+
+				// Options: array of Label => key for text boxes
+				// Note: key is used as key of array of values stored in the database
+				// Number of options are not limited
+				'options' => array(
+					'name'    => __( 'Name', 'textdomain' ),
+					'address' => __( 'Address', 'textdomain' ),
+					'email'   => __( 'Email', 'textdomain' ),
+				),
+
+				// 'clone' => true,
+			),
+		),
+	);
 	return $meta_boxes;
 }

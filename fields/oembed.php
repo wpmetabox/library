@@ -5,11 +5,11 @@
 add_filter( 'rwmb_meta_boxes', 'your_prefix_oembed_demo' );
 function your_prefix_oembed_demo( $meta_boxes ) {
 	$meta_boxes[] = array(
-		'title'  => __( 'oEmbed Demo', 'your-prefix' ),
+		'title'  => __( 'oEmbed Demo', 'textdomain' ),
 		'fields' => array(
 			array(
 				'id'    => 'oembed',
-				'name'  => __( 'oEmbed(s)', 'your-prefix' ),
+				'name'  => __( 'oEmbed(s)', 'textdomain' ),
 				'type'  => 'oembed',
 
 				// Allow to clone? Default is false

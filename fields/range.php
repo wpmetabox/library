@@ -5,14 +5,14 @@
 add_filter( 'rwmb_meta_boxes', 'your_prefix_range_demo' );
 function your_prefix_range_demo( $meta_boxes ) {
 	$meta_boxes[] = array(
-		'title'  => __( 'Range Field Demo', 'your-prefix' ),
+		'title'  => __( 'Range Field Demo', 'textdomain' ),
 
 		'fields' => array(
 			array(
-				'name' => __( 'Range', 'your-prefix' ),
+				'name' => __( 'Range', 'textdomain' ),
 				'id'   => 'range',
 				'type' => 'range',
-				'desc' => __( 'Background Opacity', 'your-prefix' ),
+				'desc' => __( 'Background Opacity', 'textdomain' ),
 
 				// Minimum value
 				'min'  => 0,

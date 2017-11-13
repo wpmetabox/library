@@ -5,11 +5,11 @@
 add_filter( 'rwmb_meta_boxes', 'your_prefix_number_demo' );
 function your_prefix_number_demo( $meta_boxes ) {
 	$meta_boxes[] = array(
-		'title'  => __( 'Number Field Demo', 'your-prefix' ),
+		'title'  => __( 'Number Field Demo', 'textdomain' ),
 		'fields' => array(
 			array(
 				'id'          => 'number',
-				'name'        => __( 'Number', 'your-prefix' ),
+				'name'        => __( 'Number', 'textdomain' ),
 				'type'        => 'number',
 
 				// Number step. Set to 'any' to accept float value
@@ -19,7 +19,7 @@ function your_prefix_number_demo( $meta_boxes ) {
 				'min'         => 0,
 
 				// Placeholder
-				'placeholder' => __( 'Enter number:', 'your-prefix' ),
+				'placeholder' => __( 'Enter number:', 'textdomain' ),
 			),
 		),
 	);

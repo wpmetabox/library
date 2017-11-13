@@ -5,10 +5,10 @@
 add_filter( 'rwmb_meta_boxes', 'your_prefix_taxonomy_advanced_demo' );
 function your_prefix_taxonomy_advanced_demo( $meta_boxes ) {
 	$meta_boxes[] = array(
-		'title'  => esc_html__( 'Taxonomy_Advanced Demo', 'your-prefix' ),
+		'title'  => esc_html__( 'Taxonomy_Advanced Demo', 'textdomain' ),
 		'fields' => array(
 			array(
-				'name'       => esc_html__( 'Taxonomy', 'your-prefix' ),
+				'name'       => esc_html__( 'Taxonomy', 'textdomain' ),
 				'id'         => 'prefix_taxonomy_advanced',
 				'type'       => 'taxonomy_advanced',
 

@@ -5,11 +5,11 @@
 add_filter( 'rwmb_meta_boxes', 'your_prefix_video_demo' );
 function your_prefix_video_demo( $meta_boxes ) {
 	$meta_boxes[] = array(
-		'title' => esc_html__( 'Video Field Demo', 'your-prefix' ),
+		'title' => esc_html__( 'Video Field Demo', 'textdomain' ),
 
 		'fields' => array(
 			array(
-				'name' => esc_html__( 'Video', 'your-prefix' ),
+				'name' => esc_html__( 'Video', 'textdomain' ),
 				'id'   => 'video',
 				'type' => 'video',
 

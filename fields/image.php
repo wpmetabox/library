@@ -6,72 +6,74 @@
 add_filter( 'rwmb_meta_boxes', 'your_prefix_image_demo' );
 function your_prefix_image_demo( $meta_boxes ) {
 	$meta_boxes[] = array(
-		'title'  => esc_html__( 'Image Upload Demo', 'your-prefix' ),
+		'title'  => esc_html__( 'Image Upload Demo', 'textdomain' ),
 		'fields' => array(
 			array(
 				'id'               => 'image',
-				'name'             => esc_html__( 'Image', 'your-prefix' ),
+				'name'             => esc_html__( 'Image', 'textdomain' ),
 				'type'             => 'image',
 
-				// Delete image from Media Library when remove it from post meta?
-				// Note: it might affect other posts if you use same image for multiple posts
+				// Delete image from Media Library when remove it from post meta?.
+				// Note: it might affect other posts if you use same image for multiple posts.
 				'force_delete'     => false,
 
-				// Maximum image uploads
+				// Maximum image uploads.
 				'max_file_uploads' => 2,
 			),
 			array(
 				'id'               => 'image_advanced',
-				'name'             => esc_html__( 'Image Advanced', 'your-prefix' ),
+				'name'             => esc_html__( 'Image Advanced', 'textdomain' ),
 				'type'             => 'image_advanced',
 
-				// Delete image from Media Library when remove it from post meta?
-				// Note: it might affect other posts if you use same image for multiple posts
+				// Delete image from Media Library when remove it from post meta?.
+				// Note: it might affect other posts if you use same image for multiple posts.
 				'force_delete'     => false,
 
-				// Maximum image uploads
+				// Maximum image uploads.
 				'max_file_uploads' => 2,
 
-				// Display the "Uploaded 1/2 files" status
+				// Display the "Uploaded 1/2 files" status.
 				'max_status'       => true,
+
+				'image_size' => 'medium',
 			),
 			array(
 				'id'               => 'plupload_image',
-				'name'             => esc_html__( 'Plupload Image (Alias of Image Upload)', 'your-prefix' ),
+				'name'             => esc_html__( 'Plupload Image (Alias of Image Upload)', 'textdomain' ),
 				'type'             => 'plupload_image',
 
-				// Delete image from Media Library when remove it from post meta?
-				// Note: it might affect other posts if you use same image for multiple posts
+				// Delete image from Media Library when remove it from post meta?.
+				// Note: it might affect other posts if you use same image for multiple posts.
 				'force_delete'     => false,
 
-				// Maximum image uploads
+				// Maximum image uploads.
 				'max_file_uploads' => 2,
 
-				// Display the "Uploaded 1/2 files" status
+				// Display the "Uploaded 1/2 files" status.
 				'max_status'       => true,
 			),
 			array(
 				'id'               => 'image_upload',
-				'name'             => esc_html__( 'Image Upload', 'your-prefix' ),
+				'name'             => esc_html__( 'Image Upload', 'textdomain' ),
 				'type'             => 'image_upload',
 
-				// Delete image from Media Library when remove it from post meta?
-				// Note: it might affect other posts if you use same image for multiple posts
+				// Delete image from Media Library when remove it from post meta?.
+				// Note: it might affect other posts if you use same image for multiple posts.
 				'force_delete'     => false,
 
-				// Maximum image uploads
+				// Maximum image uploads.
 				'max_file_uploads' => 2,
 
-				// Display the "Uploaded 1/2 files" status
+				// Display the "Uploaded 1/2 files" status.
 				'max_status'       => true,
 			),
 			array(
 				'id'           => 'thickbox_image',
-				'name'         => esc_html__( 'Thickbox Image', 'your-prefix' ),
+				'name'         => esc_html__( 'Thickbox Image', 'textdomain' ),
 				'type'         => 'thickbox_image',
 
-				// Delete image from Media Library when remove it from post meta?
-				// Note: it might affect other posts if you use same image for multiple posts
+				// Delete image from Media Library when remove it from post meta?.
+				// Note: it might affect other posts if you use same image for multiple posts.
 				'force_delete' => false,
 			),
 		),
