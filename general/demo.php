@@ -544,7 +544,42 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 					'Placehold3' => esc_html__( 'Label3', 'rwmb' ),
 				),
 			),
+			// Switch
+			array(
+				'type'      => 'switch',
+				'name' 		=> esc_html__( 'Switch demo', 'textdomain' ),
+				'id'   		=> "{$prefix}switch",
+				// Value can be 0 or 1
+				'std'  		=> 1,
+				// 2 style: rounded and square
+				'style'		=> 'square',
+				'on_label'	=> 'On',
+				'off_label'	=> 'Off',
+			),
+			// Button group
+			array(
+				'name'    => esc_html__( 'button group', 'textdomain' ),
+				'id'      => "button_group",
+				'type'    => 'button_group',
+				// Array of 'value' => 'Label' pairs for radio options.
+				// Note: the 'value' is stored in meta field, not the 'Label'
+				'options' => array(
+					'value1' => esc_html__( 'Button 1', 'textdomain' ),
+					'value2' => esc_html__( 'Button 2', 'textdomain' ),
+					'value3' => esc_html__( 'Button 3', 'textdomain' ),
+					'value4' => esc_html__( 'Button 4', 'textdomain' ),
+					'value5' => esc_html__( 'Button 5', 'textdomain' ),
+				),
+				// style defause wordpress button
+				'attributes' => array(
+					'class'        => 'button',
+				),
+				// Display inline? value : true - false
+				'inline' => true,
 
+				// Display multiple? value : true - false
+				'multiple'    => true,
+			),
 		),
 	);
 
