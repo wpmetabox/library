@@ -494,7 +494,7 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 			// IMAGE
 			array(
 				'name'             => esc_html__( 'Image Upload', 'textdomain' ),
-				'id'               => "{$prefix}image",
+				'id'               => "image",
 				'type'             => 'image',
 
 				// Delete image from Media Library when remove it from post meta?
@@ -579,6 +579,13 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 
 				// Display multiple? value : true - false
 				'multiple'    => true,
+				'clone'       => true,
+			),
+			// background
+			array(
+				'name'     => __( 'Background Advanced', 'textdomain' ),
+				'id'       => 'background_demo',
+				'type'     => 'background',
 			),
 		),
 	);

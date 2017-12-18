@@ -27,6 +27,7 @@ function your_prefix_button_group_demo( $meta_boxes ) {
 
 				// Display multiple? value : true - false
 				// 'multiple'    => true,
+				'clone'       => true,
 			),
 
 			array(
@@ -48,6 +49,7 @@ function your_prefix_button_group_demo( $meta_boxes ) {
 
 				// Display multiple? value : true - false
 				'multiple'    => true,
+				'clone'       => true,
 			),
 
 			array(
@@ -68,6 +70,7 @@ function your_prefix_button_group_demo( $meta_boxes ) {
 
 				// Display multiple? value : true - false
 				'multiple'    => true,
+				'clone'       => true,
 			),
 		),
 
