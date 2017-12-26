@@ -9,8 +9,14 @@ function your_prefix_image_demo( $meta_boxes ) {
 		'title'  => esc_html__( 'Image Upload Demo', 'textdomain' ),
 		'fields' => array(
 			array(
+				'name' => __( 'Single Image', 'textdomain' ),
+				'id'   => 'single_img',
+				'type' => 'single_image',
+				// 'clone' => true,
+			),
+			array(
 				'id'               => 'image',
-				'name'             => esc_html__( 'Image', 'textdomain' ),
+				'name'             => esc_html__( 'Image Gallery', 'textdomain' ),
 				'type'             => 'image',
 
 				// Delete image from Media Library when remove it from post meta?.

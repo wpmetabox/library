@@ -430,6 +430,12 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 				// Do not show how many files uploaded/remaining.
 				'max_status'       => 'false',
 			),
+			array(
+				'name' => __( 'Single Image', 'textdomain' ),
+				'id'   => "{$prefix}single_img",
+				'type' => 'single_image',
+				// 'clone' => true,
+			),
 			// IMAGE ADVANCED - RECOMMENDED
 			array(
 				'name'             => esc_html__( 'Image Advanced Upload (Recommended)', 'textdomain' ),
