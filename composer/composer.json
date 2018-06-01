@@ -1,0 +1,87 @@
+{
+  "repositories":[
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+    {
+      "type": "composer",
+      "url": "https://packages.metabox.io/YOUR_API_KEY"
+    },
+  ],
+  "require": {
+    "wpackagist-plugin/meta-box": "dev-trunk",
+    "wpackagist-plugin/mb-rest-api": "dev-trunk",
+    "wpackagist-plugin/mb-relationships": "dev-trunk",
+    "wpackagist-plugin/mb-comment-meta": "dev-trunk",
+    "wpackagist-plugin/mb-custom-post-type": "dev-trunk",
+    "wpackagist-plugin/meta-box-beaver-themer-integrator": "dev-trunk",
+    "wpackagist-plugin/meta-box-facetwp-integrator": "dev-trunk",
+    "wpackagist-plugin/meta-box-yoast-seo": "dev-trunk",
+    "wpackagist-plugin/meta-box-text-limiter": "dev-trunk",
+    "meta-box/mb-admin-columns": "dev-master",
+    "meta-box/mb-term-meta": "dev-master",
+    "meta-box/mb-settings-page": "dev-master",
+    "meta-box/mb-user-profile": "dev-master",
+    "meta-box/mb-custom-table": "dev-master",
+    "meta-box/mb-revision": "dev-master",
+    "meta-box/mb-frontend-submission": "dev-master",
+    "meta-box/mb-user-meta": "dev-master",
+    "meta-box/meta-box-geolocation": "dev-master",
+    "meta-box/meta-box-conditional-logic": "dev-master",
+    "meta-box/meta-box-group": "dev-master",
+    "meta-box/meta-box-columns": "dev-master",
+    "meta-box/meta-box-builder": "dev-master",
+    "meta-box/meta-box-template": "dev-master",
+    "meta-box/meta-box-tooltip": "dev-master",
+    "meta-box/meta-box-show-hide": "dev-master",
+    "meta-box/meta-box-tabs": "dev-master",
+    "meta-box/meta-box-include-excludes": "dev-master",
+    "meta-box/meta-box-updater": "dev-master"
+  },
+  "extra": {
+    "installer-paths": {
+      "vendor/meta-box/meta-box/": ["wpackagist-plugin/meta-box"],
+      "vendor/meta-box/mb-rest-api/": ["wpackagist-plugin/mb-rest-api"],
+      "vendor/meta-box/mb-relationsihps/": ["wpackagist-plugin/mb-relationships"],
+      "vendor/meta-box/mb-comment-meta/": ["wpackagist-plugin/mb-comment-meta"],
+      "vendor/meta-box/mb-custom-post-type/": ["wpackagist-plugin/mb-custom-post-type"],
+      "vendor/meta-box/meta-box-beaver-themer-integrator/": ["wpackagist-plugin/meta-box-beaver-themer-integrator"],
+      "vendor/meta-box/meta-box-facetwp-integrator/": ["wpackagist-plugin/meta-box-facetwp-integrator"],
+      "vendor/meta-box/meta-box-yoast-seo/": ["wpackagist-plugin/meta-box-yoast-seo"],
+      "vendor/meta-box/meta-box-text-limiter/": ["wpackagist-plugin/meta-box-text-limiter"]
+    }
+  },
+  "autoload": {
+    "files": [
+      "vendor/meta-box/meta-box/meta-box.php",
+      "vendor/meta-box/mb-rest-api/mb-rest-api.php",
+      "vendor/meta-box/mb-relationships/mb-relationships.php",
+      "vendor/meta-box/mb-comment-meta/mb-comment-meta.php",
+      "vendor/meta-box/mb-custom-post-type/mb-custom-post-type.php",
+      "vendor/meta-box/meta-box-beaver-themer-integrator/meta-box-beaver-themer-integrator.php",
+      "vendor/meta-box/meta-box-facetwp-integrator/meta-box-facetwp-integrator.php",
+      "vendor/meta-box/meta-box-yoast-seo/meta-box-yoast-seo.php",
+      "vendor/meta-box/meta-box-text-limiter/meta-box-text-limiter.php",
+      "vendor/meta-box/mb-admin-columns/mb-admin-columns.php",
+      "vendor/meta-box/mb-term-meta/mb-term-meta.php",
+      "vendor/meta-box/mb-settings-page/mb-settings-page.php",
+      "vendor/meta-box/mb-user-profile/mb-user-profile.php",
+      "vendor/meta-box/mb-custom-table/mb-custom-table.php",
+      "vendor/meta-box/mb-revision/mb-revision.php",
+      "vendor/meta-box/mb-frontend-submission/mb-frontend-submission.php",
+      "vendor/meta-box/mb-user-meta/mb-user-meta.php",
+      "vendor/meta-box/meta-box-geolocation/meta-box-geolocation.php",
+      "vendor/meta-box/meta-box-conditional-logic/meta-box-conditional-logic.php",
+      "vendor/meta-box/meta-box-group/meta-box-group.php",
+      "vendor/meta-box/meta-box-columns/meta-box-columns.php",
+      "vendor/meta-box/meta-box-builder/meta-box-builder.php",
+      "vendor/meta-box/meta-box-template/meta-box-template.php",
+      "vendor/meta-box/meta-box-tooltip/meta-box-tooltip.php",
+      "vendor/meta-box/meta-box-show-hide/meta-box-show-hide.php",
+      "vendor/meta-box/meta-box-tabs/meta-box-tabs.php",
+      "vendor/meta-box/meta-box-include-excludes/meta-box-include-excludes.php",
+      "vendor/meta-box/meta-box-updater/meta-box-updater.php"
+    ]
+  }
+}
