@@ -63,26 +63,7 @@
       "vendor/meta-box/meta-box-beaver-themer-integrator/meta-box-beaver-themer-integrator.php",
       "vendor/meta-box/meta-box-facetwp-integrator/meta-box-facetwp-integrator.php",
       "vendor/meta-box/meta-box-yoast-seo/meta-box-yoast-seo.php",
-      "vendor/meta-box/meta-box-text-limiter/meta-box-text-limiter.php",
-      "vendor/meta-box/mb-admin-columns/mb-admin-columns.php",
-      "vendor/meta-box/mb-term-meta/mb-term-meta.php",
-      "vendor/meta-box/mb-settings-page/mb-settings-page.php",
-      "vendor/meta-box/mb-user-profile/mb-user-profile.php",
-      "vendor/meta-box/mb-custom-table/mb-custom-table.php",
-      "vendor/meta-box/mb-revision/mb-revision.php",
-      "vendor/meta-box/mb-frontend-submission/mb-frontend-submission.php",
-      "vendor/meta-box/mb-user-meta/mb-user-meta.php",
-      "vendor/meta-box/meta-box-geolocation/meta-box-geolocation.php",
-      "vendor/meta-box/meta-box-conditional-logic/meta-box-conditional-logic.php",
-      "vendor/meta-box/meta-box-group/meta-box-group.php",
-      "vendor/meta-box/meta-box-columns/meta-box-columns.php",
-      "vendor/meta-box/meta-box-builder/meta-box-builder.php",
-      "vendor/meta-box/meta-box-template/meta-box-template.php",
-      "vendor/meta-box/meta-box-tooltip/meta-box-tooltip.php",
-      "vendor/meta-box/meta-box-show-hide/meta-box-show-hide.php",
-      "vendor/meta-box/meta-box-tabs/meta-box-tabs.php",
-      "vendor/meta-box/meta-box-include-excludes/meta-box-include-excludes.php",
-      "vendor/meta-box/meta-box-updater/meta-box-updater.php"
+      "vendor/meta-box/meta-box-text-limiter/meta-box-text-limiter.php"
     ]
   }
 }
