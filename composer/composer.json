@@ -6,13 +6,13 @@
     },
     {
       "type": "composer",
-      "url": "https://packages.metabox.io/YOUR_API_KEY"
+      "url": "https://packages.metabox.io/YOUR_LICENSE_KEY"
     }
   ],
   "require": {
     "wpackagist-plugin/meta-box": "dev-trunk",
     "wpackagist-plugin/mb-rest-api": "dev-trunk",
-    "wpackagist-plugin/mb-relationships": "dev-trunk",
+    "wpackagist-plugin/mb-relationships": "^1.3",
     "wpackagist-plugin/mb-comment-meta": "dev-trunk",
     "wpackagist-plugin/mb-custom-post-type": "dev-trunk",
     "wpackagist-plugin/meta-box-beaver-themer-integrator": "dev-trunk",
@@ -36,14 +36,13 @@
     "meta-box/meta-box-tooltip": "dev-master",
     "meta-box/meta-box-show-hide": "dev-master",
     "meta-box/meta-box-tabs": "dev-master",
-    "meta-box/meta-box-include-exclude": "dev-master",
-    "meta-box/meta-box-updater": "dev-master"
+    "meta-box/meta-box-include-exclude": "dev-master"
   },
   "extra": {
     "installer-paths": {
       "vendor/meta-box/meta-box/": ["wpackagist-plugin/meta-box"],
       "vendor/meta-box/mb-rest-api/": ["wpackagist-plugin/mb-rest-api"],
-      "vendor/meta-box/mb-relationsihps/": ["wpackagist-plugin/mb-relationships"],
+      "vendor/meta-box/mb-relationships/": ["wpackagist-plugin/mb-relationships"],
       "vendor/meta-box/mb-comment-meta/": ["wpackagist-plugin/mb-comment-meta"],
       "vendor/meta-box/mb-custom-post-type/": ["wpackagist-plugin/mb-custom-post-type"],
       "vendor/meta-box/meta-box-beaver-themer-integrator/": ["wpackagist-plugin/meta-box-beaver-themer-integrator"],
@@ -62,8 +61,8 @@
       "vendor/meta-box/mb-custom-post-type/mb-custom-post-type.php",
       "vendor/meta-box/meta-box-beaver-themer-integrator/meta-box-beaver-themer-integrator.php",
       "vendor/meta-box/meta-box-facetwp-integrator/meta-box-facetwp-integrator.php",
-      "vendor/meta-box/meta-box-yoast-seo/meta-box-yoast-seo.php",
-      "vendor/meta-box/meta-box-text-limiter/meta-box-text-limiter.php"
+      "vendor/meta-box/meta-box-yoast-seo/mb-yoast-seo.php",
+      "vendor/meta-box/meta-box-text-limiter/text-limiter.php"
     ]
   }
 }
