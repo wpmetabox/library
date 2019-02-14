@@ -13,6 +13,7 @@ add_filter( 'rwmb_meta_boxes', function( $meta_boxes ) {
 				'type' => 'email',
 				'id'   => 'user_email',
 				'name' => 'Email',
+				'std'  => wp_get_current_user()->user_email,
 			]
 		],
 	];
