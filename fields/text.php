@@ -40,6 +40,13 @@ function your_prefix_text_demo( $meta_boxes ) {
 					),
 				),
 			),
+			array(
+				'name'    => __( 'Input Group', 'textdomain' ),
+				'id'      => 'text',
+				'type'    => 'text',
+				'prepend' => '$',
+				'append'  => '.00',
+			),
 		),
 	);
 	return $meta_boxes;
