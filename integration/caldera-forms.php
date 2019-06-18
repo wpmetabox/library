@@ -8,7 +8,7 @@
  * - Create var containing metafield -
  * $caldera_form = rwmb_meta("{$prefix}caldera_form");
  * - Use in template file -
- * echo do_shortcode('[caldera_form id=' . $ninja_form . ']');
+ * echo do_shortcode('[caldera_form id=' . caldera_form . ']');
  */
 
 add_action( 'rwmb_meta_boxes', 'your_prefix_register_meta_boxes' );
