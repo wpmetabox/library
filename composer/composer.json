@@ -20,6 +20,7 @@
     "wpackagist-plugin/meta-box-yoast-seo": "dev-trunk",
     "wpackagist-plugin/meta-box-text-limiter": "dev-trunk",
     "meta-box/mb-admin-columns": "dev-master",
+    "meta-box/mb-blocks": "dev-master",
     "meta-box/mb-term-meta": "dev-master",
     "meta-box/mb-settings-page": "dev-master",
     "meta-box/mb-user-profile": "dev-master",
