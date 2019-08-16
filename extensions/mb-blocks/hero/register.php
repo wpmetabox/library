@@ -14,8 +14,8 @@ add_filter( 'rwmb_meta_boxes', function( $meta_boxes ) {
 			'align' => ['wide', 'full'],
 		],
 
-		'render_template' => get_template_directory() . '/blocks/hero/template.php', // The PHP template that renders the block.
-		'enqueue_style'   => get_template_directory_uri() . '/blocks/hero/style.css', // CSS file for the block.
+		'render_template' => get_stylesheet_directory() . '/blocks/hero/template.php', // The PHP template that renders the block.
+		'enqueue_style'   => get_stylesheet_directory_uri() . '/blocks/hero/style.css', // CSS file for the block.
 
 		// Now register the block fields.
 		'fields' => [
