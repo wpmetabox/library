@@ -66,7 +66,7 @@
       "vendor/meta-box/mb-rest-api/mb-rest-api.php",
       "vendor/meta-box/meta-box-beaver-themer-integrator/meta-box-beaver-themer-integrator.php",
       "vendor/meta-box/meta-box-facetwp-integrator/meta-box-facetwp-integrator.php",
-      "vendor/meta-box/meta-box-text-limiter/text-limiter.php"
+      "vendor/meta-box/meta-box-text-limiter/text-limiter.php",
       "vendor/meta-box/meta-box-yoast-seo/mb-yoast-seo.php",
       "vendor/meta-box/mb-admin-columns/mb-admin-columns.php",
       "vendor/meta-box/mb-blocks/mb-blocks.php",
