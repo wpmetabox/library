@@ -53,7 +53,8 @@
       "vendor/meta-box/meta-box-beaver-themer-integrator": ["wpackagist-plugin/meta-box-beaver-themer-integrator"],
       "vendor/meta-box/meta-box-facetwp-integrator": ["wpackagist-plugin/meta-box-facetwp-integrator"],
       "vendor/meta-box/meta-box-text-limiter": ["wpackagist-plugin/meta-box-text-limiter"],
-      "vendor/meta-box/meta-box-yoast-seo": ["wpackagist-plugin/meta-box-yoast-seo"]
+      "vendor/meta-box/meta-box-yoast-seo": ["wpackagist-plugin/meta-box-yoast-seo"],
+      "vendor/meta-box/{$name}/": ["type:wordpress-plugin"]
     }
   },
   "autoload": {
