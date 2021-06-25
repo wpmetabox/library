@@ -10,7 +10,7 @@
     }
   ],
   "require": {
-    "wpackagist-plugin/meta-box": "dev-trunk",
+    "wpackagist-plugin/meta-box": "^5",
     "wpackagist-plugin/mb-comment-meta": "dev-trunk",
     "wpackagist-plugin/mb-custom-post-type": "dev-trunk",
     "wpackagist-plugin/mb-elementor-integrator": "dev-trunk",
