@@ -44,17 +44,7 @@
   },
   "extra": {
     "installer-paths": {
-      "vendor/meta-box/meta-box": ["wpackagist-plugin/meta-box"],
-      "vendor/meta-box/mb-comment-meta": ["wpackagist-plugin/mb-comment-meta"],
-      "vendor/meta-box/mb-custom-post-type": ["wpackagist-plugin/mb-custom-post-type"],
-      "vendor/meta-box/mb-elementor-integrator": ["wpackagist-plugin/mb-elementor-integrator"],
-      "vendor/meta-box/mb-relationships": ["wpackagist-plugin/mb-relation"],
-      "vendor/meta-box/mb-rest-api": ["wpackagist-plugin/mb-rest-api"],
-      "vendor/meta-box/meta-box-beaver-themer-integrator": ["wpackagist-plugin/meta-box-beaver-themer-integrator"],
-      "vendor/meta-box/meta-box-facetwp-integrator": ["wpackagist-plugin/meta-box-facetwp-integrator"],
-      "vendor/meta-box/meta-box-text-limiter": ["wpackagist-plugin/meta-box-text-limiter"],
-      "vendor/meta-box/meta-box-yoast-seo": ["wpackagist-plugin/meta-box-yoast-seo"],
-      "vendor/meta-box/{$name}/": ["type:wordpress-plugin"]
+      "vendor/meta-box/{$name}": ["vendor:wpackagist-plugin", "vendor:meta-box"]
     }
   },
   "autoload": {
