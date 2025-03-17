@@ -2,24 +2,12 @@
   "repositories":[
     {
       "type": "composer",
-      "url": "https://wpackagist.org"
-    },
-    {
-      "type": "composer",
       "url": "https://packages.metabox.io/YOUR_LICENSE_KEY"
     }
   ],
   "require": {
-    "wpackagist-plugin/meta-box": "^5",
-    "wpackagist-plugin/mb-comment-meta": "dev-trunk",
-    "wpackagist-plugin/mb-custom-post-type": "dev-trunk",
-    "wpackagist-plugin/mb-elementor-integrator": "dev-trunk",
-    "wpackagist-plugin/mb-relationships": "^1.3",
-    "wpackagist-plugin/mb-rest-api": "dev-trunk",
-    "wpackagist-plugin/meta-box-beaver-themer-integrator": "dev-trunk",
-    "wpackagist-plugin/meta-box-facetwp-integrator": "dev-trunk",
-    "wpackagist-plugin/meta-box-text-limiter": "dev-trunk",
-    "wpackagist-plugin/meta-box-yoast-seo": "dev-trunk",
+    "composer/installers": "^1",
+    "meta-box/dependency": "dev-main",
     "meta-box/mb-admin-columns": "dev-master",
     "meta-box/mb-blocks": "dev-master",
     "meta-box/mb-custom-table": "dev-master",
@@ -29,8 +17,7 @@
     "meta-box/mb-term-meta": "dev-master",
     "meta-box/mb-user-meta": "dev-master",
     "meta-box/mb-user-profile": "dev-master",
-    "meta-box/meta-box-aio": "dev-master",
-    "meta-box/meta-box-builder": "dev-master",
+    "meta-box/mb-views": "dev-master",
     "meta-box/meta-box-columns": "dev-master",
     "meta-box/meta-box-conditional-logic": "dev-master",
     "meta-box/meta-box-geolocation": "dev-master",
@@ -40,11 +27,25 @@
     "meta-box/meta-box-tabs": "dev-master",
     "meta-box/meta-box-template": "dev-master",
     "meta-box/meta-box-tooltip": "dev-master",
-    "composer/installers": "^1"
+    "wpmetabox/mb-acf-migration": "dev-master",
+    "wpmetabox/mb-comment-meta": "dev-master",
+    "wpmetabox/mb-custom-post-type": "dev-master",
+    "wpmetabox/mb-divi-integrator": "dev-main",
+    "wpmetabox/mb-elementor-integrator": "dev-master",
+    "wpmetabox/mb-rank-math": "dev-master",
+    "wpmetabox/mb-relationships": "dev-master",
+    "wpmetabox/mb-rest-api": "dev-master",
+    "wpmetabox/mb-toolset-migration": "dev-master",
+    "wpmetabox/mb-yoast-seo": "dev-master",
+    "wpmetabox/meta-box": "dev-master",
+    "wpmetabox/meta-box-beaver-themer-integrator": "dev-master",
+    "wpmetabox/meta-box-builder": "dev-master",
+    "wpmetabox/meta-box-facetwp-integrator": "dev-master",
+    "wpmetabox/text-limiter": "dev-master"
   },
   "extra": {
     "installer-paths": {
-      "vendor/meta-box/{$name}": ["vendor:wpackagist-plugin", "vendor:meta-box"]
+      "vendor/meta-box/{$name}": ["vendor:wpmetabox", "vendor:meta-box"]
     }
   },
   "autoload": {
